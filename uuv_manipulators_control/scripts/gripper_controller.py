@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Copyright (c) 2016 The UUV Simulator Authors.
 # All rights reserved.
 #
@@ -138,9 +138,9 @@ class GripperController:
                 self._ratio_goal = 0.0
             if self._ratio_goal > 1:
                 self._ratio_goal = 1.0
-        except Exception, e:
-            print 'Error occurred while parsing joystick input, check if the joy_id corresponds to the joystick ' \
-                  'being used. message=%s' % str(e)
+        except Exception as e:
+            print('Error occurred while parsing joystick input, check if the joy_id corresponds to the joystick ' \
+                  'being used. message=%s' % str(e))
 
 
 if __name__ == '__main__':
